@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'font1';
+    src: url(./asset/Pigookle.ttf);
+}
+@font-face {
+    font-family: 'font2';
+    src: url(./asset/Chapaza.ttf);
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: clamp(20px, 5vw, 50px) 10px;
+  background-image: url(./asset/WallpaperDog-20342692.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+h1{
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    font-family: 'font1';
+}
+.container{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.block{
+    width: 180px;
+    height: 100px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: 'font2' , Times, 'Times New Roman', serif;
+    border: 1px solid rgba(0, 0, 0, 0.182);
+    box-shadow:  1px 1px 5px 2px rgb(0 0 0 / 46%);
+    letter-spacing: 1px;
+    
+}
+.container-button{
+    margin-top: 20px;
+}
+button{
+    
+    background-color: rgba(255, 228, 196, 0);
+    border: none;
+    font-size: 60px;
+    cursor: pointer;
+   
+    width: 100px;
+    margin: 3px;
+    height: 80px;
+
+    
+}
+.cycles{
+    font-size: 30px;
+    margin-top: 15px;
+    font-family: 'font2';
+}
+
+button:hover{
+    animation : button 0.5s ease-in-out
+   
+}
+@keyframes button {
+    0%{
+        transform: translateY(0);
+
+    } 25%{
+        transform: translateY(3px);
+    }50%{
+        transform: translateY(-3px)
+    }75%{
+        transform: translateY(3px)
+    }
+}
+span{
+    font-weight: bolder;
+}
